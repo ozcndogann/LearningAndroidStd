@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7E7"
+    android:clickable="false"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/isim"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Soyisim"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Soyisim"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isim" />
+
+    <EditText
+        android:id="@+id/Yas"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Yaş"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Soyisim" />
+
+    <Button
+        android:id="@+id/Olustur"
+        android:layout_width="174dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Olustur"
+        android:text="Profil Oluştur"
+        app:layout_constraintStart_toStartOf="@+id/Yas"
+        app:layout_constraintTop_toBottomOf="@+id/Yas" />
+
+    <TextView
+        android:id="@+id/ozellikler"
+        android:layout_width="259dp"
+        android:layout_height="131dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        app:layout_constraintTop_toTopOf="@+id/profilePicture"
+        tools:text="Karakter Bilgileri" />
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="128dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="97dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
